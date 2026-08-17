@@ -47,21 +47,21 @@ Baseline Lighthouse del prototipo anterior (`lighthouse-report.json`):
 | Best Practices | 100 | **100** |
 | SEO | 100 | **100** |
 | FCP | 2.6 s | **0.9 s** |
-| LCP | 3.0 s | **2.3 s** |
+| LCP | 3.0 s | **2.4 s** |
 | TBT | 0 ms | **0 ms** |
 | CLS | 0.012 | **0** |
 
-La medición final se ejecutó con Lighthouse 13.4.1 en perfil móvil local. La versión actual reduce el JavaScript de producción a ~2.4 kB gzip, el CSS a ~5.2 kB gzip y cada HTML a ~3.3–4.7 kB gzip. `public/og-image.png` pesa menos de 150 KB.
+La medición final se ejecutó con Lighthouse 13.4.1 en perfil móvil local. La versión actual reduce el JavaScript de producción a ~2.4 kB gzip, el CSS a ~5.5 kB gzip y cada HTML a ~2.5–3.8 kB gzip. `public/og-image.png` pesa menos de 150 KB.
 
 ## Activos de marca
 
-- `src/assets/img/logo.svg`: firma horizontal.
-- `src/assets/img/logo-mark.svg`: isotipo Data Seed.
-- `public/logo.svg`: URL estable para JSON-LD.
-- `public/favicon.svg`, `public/favicon.ico`, `public/apple-touch-icon.png`.
-- `public/og-image.png`: tarjeta 1200 × 630 con fondo editorial generado y tipografía exacta aplicada localmente.
+- `src/assets/img/logo.webp`: archivo fuente entregado por el cliente; se conserva sin modificaciones.
+- `src/assets/img/logo-mark.png`: isotipo con fondo transparente y encuadre optimizado para cabecera y pie.
+- `public/logo.png`: firma horizontal estable para JSON-LD y directorios.
+- `public/favicon.png`, `public/favicon.ico`, `public/apple-touch-icon.png`.
+- `public/og-image.png`: tarjeta 1200 × 630 con la identidad bronce, texto exacto y peso inferior a 150 KB.
 
-Prompt final del fondo social, generado con la herramienta integrada: paisaje de datos premium que fusiona huerto chileno, textura de nuez y curvas topográficas; interés visual a la derecha, espacio negativo oscuro a la izquierda; paleta verde bosque y acento hoja; sin texto, logos, personas ni marcas.
+`scripts/build-assets.py` deriva todos los formatos desde el archivo fuente del cliente sin redibujar el símbolo. La cabecera combina ese isotipo con un wordmark tipográfico accesible y responsive.
 
 ## Pendientes del cliente
 
