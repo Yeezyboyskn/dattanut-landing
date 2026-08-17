@@ -254,3 +254,72 @@ Fuente primaria: `landingpagev2_DATTANUT_completado.xlsx`, pestaña **Cuestionar
 - `[DEFAULT] Identidad`: paleta dark futurista propia (`#070B09`, `#0D1512`, `#4ADE80`, `#F2F7F3`), sin replicar la plantilla Farmi.
 - `[CONFIGURAR] FormSubmit`: el endpoint apunta a `contacto@dattanut.com`, pero el cliente debe confirmar el email desde el mensaje de activación de FormSubmit.
 - `[CONFIGURAR] GA4 y Search Console`: GA4 usa `G-XXXXXXXXXX` y no se carga hasta contar con consentimiento y un ID real. Search Console queda pendiente de verificación del dominio.
+
+## Mapa pregunta → decisión del prototipo
+
+| Pregunta | Estado | Aplicación |
+|---:|---|---|
+| 1 | Usada | Marca y promesa principal. |
+| 2 | Usada | Posicionamiento agritech y cuatro especies. |
+| 3 | Usada | Chile con audiencia B2B internacional. |
+| 4 | Adaptada | Se comunica proyecto 2026 y respaldo sectorial sin inventar antigüedad ni clientes. |
+| 5 | Usada | Email y horario; no se publican teléfono ni dirección. |
+| 6 | `[PLACEHOLDER]` | Redes no publicadas hasta contar con URLs oficiales. |
+| 7 | Usada | Richard López y contacto por email. |
+| 8 | Usada | Arquitectura informativa con derivación a productos, referencias y contacto. |
+| 9 | Usada | CTA para explorar, consultar y participar. |
+| 10 | Adaptada | Meta de 20–30 contactos documentada; no se presenta como resultado logrado. |
+| 11 | Usada | Sitio multipágina, no one-page. |
+| 12 | Usada | Lenguaje y recorridos para perfiles técnico-comerciales. |
+| 13 | Usada | Propuesta de centralización, validación y comparabilidad. |
+| 14 | Usada | FAQ responde las cuatro objeciones. |
+| 15 | Adaptada | INC, USDA y ODEPA se muestran como fuentes/contexto, no como competidores directos. |
+| 16 | Usada | Acceso gratuito y participación sectorial. |
+| 17 | Usada | Cinco beneficios en inicio. |
+| 18 | Usada | No se incorporan venta, garantía ni prueba. |
+| 19 | Usada | Sin precios del servicio; acceso gratuito. |
+| 20 | Usada | CTA secundarios distribuidos por el sitio. |
+| 21 | `[PLACEHOLDER]` | El PDF con textos finales no fue localizado. |
+| 22 | `[PLACEHOLDER]` | Se redactaron textos provisionales por ausencia del PDF. |
+| 23 | Usada | No hay testimonios ni reseñas fabricadas. |
+| 24 | Usada | Tono técnico en español de Chile. |
+| 25 | Adaptada | Solo español en esta fase; no se creó versión inglesa. |
+| 26 | `[PLACEHOLDER]` | Logo provisional porque el PNG oficial no fue localizado. |
+| 27 | `[PLACEHOLDER]` | Imágenes originales generadas para el prototipo. |
+| 28 | Usada | No se incorporan videos. |
+| 29 | `[DEFAULT]` | Paleta propia dark/verde; Farmi no se replica. |
+| 30 | Usada | Dirección visual moderna. |
+| 31 | Usada | Dark futurista premium, evitando estética agro genérica. |
+| 32 | Adaptada | Se usaron imágenes generadas; el banco final queda por definir. |
+| 33 | Usada | Todas las secciones solicitadas están presentes. |
+| 34 | Usada | Campos exactos del formulario. |
+| 35 | Usada | FormSubmit apunta a contacto@dattanut.com. |
+| 36 | Usada | No se agregó newsletter. |
+| 37 | Usada | Mensaje de éxito literal. |
+| 38 | Usada | Sin WhatsApp. |
+| 39 | Usada | Sin pagos. |
+| 40 | Usada | Sin reservas. |
+| 41 | Usada | Sin mapa. |
+| 42 | Usada | Buscador, filtros, tabla y tabs implementados. |
+| 43 | Adaptada | Canonical usa dattanut.com; la demo se publica en GitHub Pages. |
+| 44 | Usada | Keywords integradas en títulos, metadatos y contenido. |
+| 45 | `[PLACEHOLDER]` | GA4 `G-XXXXXXXXXX`; Search Console pendiente. |
+| 46 | `[PLACEHOLDER]` | Google Business Profile queda fuera del prototipo. |
+| 47 | Adaptada | Textos básicos para Chile, marcados para revisión legal. |
+| 48 | Usada | Aviso, privacidad y disclaimer literal. |
+| 49 | Usada | Banner de consentimiento solo para analítica. |
+| 50 | Usada | Fuente, periodo y fecha de corte visibles en tablas. |
+| 51 | Adaptada | Dominio documentado; no se modificó su DNS. |
+| 52 | `[PLACEHOLDER]` | Hosting definitivo incierto y no utilizado para la demo. |
+| 53 | Adaptada | Se publica contacto@dattanut.com; richard@ se conserva solo como antecedente. |
+| 54 | Adaptada | README preparado para mantenimiento por el cliente. |
+| 55 | Usada | Responsive validado en cuatro anchos. |
+| 56 | Usada | Entrega preparada antes del 19 de agosto de 2026. |
+| 57 | Adaptada | Hitos documentados; no se inventó planificación detallada de las 12 semanas. |
+| 58 | Usada | Richard López queda identificado como aprobador. |
+| 59 | Usada | Dos rondas quedan documentadas. |
+| 60 | `[PLACEHOLDER]` | Presupuesto por definir; no se inventó monto. |
+| 61 | Adaptada | Prototipo técnico completo; dominio productivo y GA4 quedan pendientes. |
+| 62 | Adaptada | README entrega guía básica de actualización. |
+| 63 | Usada | No se agregan informes mensuales. |
+| 64 | `[PLACEHOLDER]` | Checklist auditado; adjuntos faltantes documentados y sustituidos de forma explícita. |
