@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
-  <title id="title">DATTANUT</title>
-  <desc id="desc">[PLACEHOLDER] Marca provisional: fruto y hoja verdes sobre fondo oscuro.</desc>
-  <rect width="64" height="64" rx="18" fill="#0D1512"/>
-  <path d="M18 34c0-10 8-18 18-18 6 0 11 3 14 8-5 1-9 4-11 8-3 6-8 10-14 10-4 0-7-3-7-8Z" fill="#4ADE80"/>
-  <path d="M25 43c7-8 14-13 24-19" fill="none" stroke="#07120B" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="25" cy="31" r="4" fill="#A6F4C4"/>
-</svg>
