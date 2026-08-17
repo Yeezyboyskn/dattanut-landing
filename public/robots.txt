@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dattanut.com/sitemap.xml
+Sitemap: https://yeezyboyskn.github.io/dattanut-landing/sitemap.xml
