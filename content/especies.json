@@ -1,0 +1,32 @@
+{
+  "especies": [
+    {
+      "key": "pecanos",
+      "name": "Pecanos",
+      "latin": "Carya illinoinensis",
+      "image": "pecans.webp",
+      "copy": "Una alternativa de diversificación que exige combinar lectura agronómica, comercial y territorial."
+    },
+    {
+      "key": "nueces",
+      "name": "Nueces",
+      "latin": "Juglans regia",
+      "image": "walnuts.webp",
+      "copy": "Una cadena consolidada y exportadora, donde calidad, condición y destino explican buena parte del valor."
+    },
+    {
+      "key": "almendras",
+      "name": "Almendras",
+      "latin": "Prunus dulcis",
+      "image": "almonds.webp",
+      "copy": "Una categoría que conviene leer conectando oferta local, importaciones y referencias internacionales."
+    },
+    {
+      "key": "avellanas",
+      "name": "Avellanas",
+      "latin": "Corylus avellana",
+      "image": "hazelnuts.webp",
+      "copy": "Una cadena de largo plazo en expansión, vinculada con demanda industrial y decisiones de huerto."
+    }
+  ]
+}

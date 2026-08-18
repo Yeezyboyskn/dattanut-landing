@@ -1,0 +1,134 @@
+backend:
+  name: github
+  repo: Yeezyboyskn/dattanut-landing
+  branch: main
+  base_url: https://api.github.com
+
+locale: 'es'
+
+media_folder: "src/assets/img"
+public_folder: "src/assets/img"
+
+collections:
+  - name: inicio
+    label: Inicio y contacto
+    files:
+      - name: inicio
+        label: Inicio y contacto
+        file: content/sitio.json
+        fields:
+          - { label: Marca, name: marca, widget: string }
+          - { label: Tagline, name: tagline, widget: string }
+          - { label: Título principal (inicio), name: heroTitulo, widget: string }
+          - { label: Palabra destacada en el título, name: heroResaltado, widget: string }
+          - { label: Texto del hero, name: heroTexto, widget: text }
+          - { label: Línea superior del hero, name: heroEyebrow, widget: string }
+          - label: Fuentes de referencia
+            name: fuentes
+            widget: list
+            field: { label: Fuente, name: fuente, widget: string }
+          - { label: Nombre del contacto, name: contactoNombre, widget: string }
+          - { label: Email de contacto, name: contactoEmail, widget: string }
+          - { label: Horario de contacto, name: contactoHorario, widget: string }
+          - { label: Texto de respuesta (página contacto), name: contactoRespuesta, widget: text }
+          - { label: Descripción del pie de página, name: footerDescripcion, widget: text }
+          - { label: Línea de fuentes del pie, name: footerFuentes, widget: string }
+          - { label: Aviso de demostración, name: demoBar, widget: string }
+          - { label: Descripción SEO, name: metaDescripcion, widget: text }
+          - label: Pasos "Cómo funciona"
+            name: pasos
+            widget: list
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: Texto, name: texto, widget: text }
+
+  - name: especies
+    label: Especies
+    files:
+      - name: especies
+        label: Especies
+        file: content/especies.json
+        fields:
+          - label: Especies
+            name: especies
+            widget: list
+            fields:
+              - { label: Clave (no modificar), name: key, widget: string }
+              - { label: Nombre, name: name, widget: string }
+              - { label: Nombre científico, name: latin, widget: string }
+              - { label: Imagen, name: image, widget: image }
+              - { label: Descripción, name: copy, widget: text }
+
+  - name: precios
+    label: Referencias de precio
+    files:
+      - name: precios
+        label: Referencias de precio
+        file: content/precios.json
+        fields:
+          - label: Filas de la tabla de precios
+            name: precios
+            widget: list
+            fields:
+              - { label: Especie (clave), name: species, widget: string }
+              - { label: Referencia, name: reference, widget: string }
+              - { label: Periodo, name: period, widget: string }
+              - { label: Fuente, name: source, widget: string }
+              - { label: Fecha de corte, name: cut, widget: string }
+
+  - name: biblioteca
+    label: Biblioteca
+    files:
+      - name: articulos
+        label: Artículos
+        file: content/articulos.json
+        fields:
+          - label: Artículos de la biblioteca
+            name: articulos
+            widget: list
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Resumen, name: summary, widget: text }
+              - label: Especie
+                name: species
+                widget: select
+                options: [todas, pecanos, nueces, almendras, avellanas]
+              - label: Estado editorial
+                name: state
+                widget: select
+                options: [Validado, "En revisión", "Por validar"]
+
+  - name: faq
+    label: Preguntas frecuentes
+    files:
+      - name: faq
+        label: Preguntas frecuentes
+        file: content/faq.json
+        fields:
+          - label: Preguntas frecuentes
+            name: faq
+            widget: list
+            fields:
+              - { label: Pregunta, name: question, widget: string }
+              - { label: Respuesta, name: answer, widget: text }
+
+  - name: eventos
+    label: Eventos
+    files:
+      - name: eventos
+        label: Eventos
+        file: content/eventos.json
+        fields:
+          - label: Eventos publicados
+            name: eventos
+            widget: list
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Fecha, name: date, widget: string }
+              - { label: Lugar, name: place, widget: string }
+              - { label: Organización, name: org, widget: string }
+              - { label: Enlace oficial, name: link, widget: string }
+              - label: Estado
+                name: state
+                widget: select
+                options: [Confirmado, "En revisión"]

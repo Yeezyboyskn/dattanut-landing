@@ -1,0 +1,40 @@
+{
+  "articulos": [
+    {
+      "title": "Claves para leer una referencia de exportación",
+      "summary": "Guía sobre fuente, periodo, unidad y límites de comparación.",
+      "species": "todas",
+      "state": "Validado"
+    },
+    {
+      "title": "Pecanos: estructura de una ficha sectorial",
+      "summary": "Plantilla para ordenar antecedentes productivos y comerciales.",
+      "species": "pecanos",
+      "state": "En revisión"
+    },
+    {
+      "title": "Nueces: variables de calidad comercial",
+      "summary": "Marco de lectura para calibre, color, condición y formato.",
+      "species": "nueces",
+      "state": "Por validar"
+    },
+    {
+      "title": "Almendras: oferta local y contexto externo",
+      "summary": "Estructura comparativa de disponibilidad y origen.",
+      "species": "almendras",
+      "state": "En revisión"
+    },
+    {
+      "title": "Avellanas: seguimiento de una cadena en expansión",
+      "summary": "Variables mínimas para observar industria y comercio.",
+      "species": "avellanas",
+      "state": "Por validar"
+    },
+    {
+      "title": "Protocolo editorial DATTANUT",
+      "summary": "Cómo se etiqueta cada contenido antes de integrarlo.",
+      "species": "todas",
+      "state": "Validado"
+    }
+  ]
+}

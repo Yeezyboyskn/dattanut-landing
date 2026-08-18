@@ -1,0 +1,20 @@
+{
+  "faq": [
+    {
+      "question": "¿Los datos están validados?",
+      "answer": "La demostración no publica cifras reales. Cuando se integren, cada dato deberá indicar fuente, periodo, unidad y fecha de corte."
+    },
+    {
+      "question": "¿El acceso es gratuito?",
+      "answer": "Sí, el contenido general se plantea como acceso abierto durante esta fase."
+    },
+    {
+      "question": "¿Cómo se protege la información de exportadores?",
+      "answer": "Mediante confidencialidad, anonimización y publicación agregada; nunca se muestran datos individuales sin autorización."
+    },
+    {
+      "question": "¿Puedo proponer contenido o eventos?",
+      "answer": "Sí. El equipo revisará pertinencia, fuente y vigencia antes de publicar."
+    }
+  ]
+}

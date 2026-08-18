@@ -1,0 +1,32 @@
+{
+  "precios": [
+    {
+      "species": "pecanos",
+      "reference": "Dato sujeto a validación",
+      "period": "Por confirmar",
+      "source": "Por confirmar",
+      "cut": "Por confirmar"
+    },
+    {
+      "species": "nueces",
+      "reference": "Dato sujeto a validación",
+      "period": "Por confirmar",
+      "source": "Por confirmar",
+      "cut": "Por confirmar"
+    },
+    {
+      "species": "almendras",
+      "reference": "Dato sujeto a validación",
+      "period": "Por confirmar",
+      "source": "Por confirmar",
+      "cut": "Por confirmar"
+    },
+    {
+      "species": "avellanas",
+      "reference": "Dato sujeto a validación",
+      "period": "Por confirmar",
+      "source": "Por confirmar",
+      "cut": "Por confirmar"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "marca": "DATTANUT",
+  "tagline": "Inteligencia que da frutos",
+  "heroEyebrow": "Inteligencia sectorial · Chile",
+  "heroTitulo": "Inteligencia que da frutos",
+  "heroResaltado": "da frutos",
+  "heroTexto": "Datos de mercado y conocimiento técnico organizado para entender la industria chilena de pecanos, nueces, almendras y avellanas.",
+  "fuentes": ["ODEPA", "Aduanas", "INC", "USDA"],
+  "contactoNombre": "Richard López",
+  "contactoEmail": "contacto@dattanut.com",
+  "contactoHorario": "Lunes a viernes · horario de oficina · Chile",
+  "contactoRespuesta": "Richard López es el contacto del proyecto. Respondemos normalmente dentro de 48 horas hábiles.",
+  "footerDescripcion": "Una plataforma chilena para ordenar y contextualizar información técnica y comercial sobre frutos secos.",
+  "footerFuentes": "Fuentes de referencia: ODEPA, Aduanas, INC y USDA. Todo dato publicado debe indicar fuente, periodo y corte.",
+  "demoBar": "Demostración editorial · Los datos reales siguen sujetos a validación del cliente.",
+  "metaDescripcion": "Datos y conocimiento para la industria chilena de frutos secos.",
+  "pasos": [
+    { "titulo": "Explorar", "texto": "Elija una especie o una pregunta sectorial." },
+    { "titulo": "Verificar", "texto": "Revise fuente, periodo, unidad y fecha de corte." },
+    { "titulo": "Profundizar", "texto": "Conecte la referencia con contenido técnico y contexto." }
+  ]
+}

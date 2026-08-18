@@ -23,6 +23,20 @@ pnpm run preview
 
 El build queda en `dist/`. La configuración relativa funciona bajo la subruta del repositorio de GitHub Pages.
 
+## Panel de administración (Decap CMS)
+
+El cliente edita el contenido sin tocar código desde <https://dattanut.com/admin/>. Los textos viven en `content/*.json` (generados por `scripts/generate-pages.mjs`) y Decap CMS los edita y guarda directo en GitHub; el push dispara el despliegue automático.
+
+- `content/sitio.json` — inicio, contacto, pie de página y SEO.
+- `content/especies.json` — fichas de especies (nombre, latín, imagen, descripción).
+- `content/precios.json` — filas de la tabla de referencias de mercado.
+- `content/articulos.json` — biblioteca técnica.
+- `content/faq.json` — preguntas frecuentes.
+- `content/eventos.json` — agenda (lista vacía por defecto; al agregar eventos, la página cambia a modo "confirmados").
+- `public/admin/` — panel Decap CMS (index + config.yml). El `client_id` de OAuth se completa en `public/admin/index.html`.
+
+Requisitos de acceso: el cliente necesita cuenta de GitHub + permiso de colaborador en el repositorio. La autenticación usa implicit grant (repo público, OAuth app con callback `https://api.github.com`).
+
 ## Formulario
 
 El formulario usa el endpoint AJAX de FormSubmit e incluye `_subject`, `_template`, `_captcha`, `_url` y honeypot. Antes de producción:
