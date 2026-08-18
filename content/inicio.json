@@ -1,23 +1,23 @@
 {
-  "seo": {
-    "titulo": "Inicio",
-    "descripcion": "Datos y conocimiento para la industria chilena de frutos secos."
-  },
-  "hero": {
-    "imagen": "/assets/img/hero-orchard.webp",
-    "imagenAlt": "Huerto de nogales al amanecer",
-    "eyebrow": "Inteligencia sectorial · Chile",
-    "titulo": "Inteligencia que da frutos",
-    "resaltado": "da frutos",
-    "texto": "Datos de mercado y conocimiento técnico organizado para entender la industria chilena de pecanos, nueces, almendras y avellanas.",
-    "acciones": [
-      { "label": "Explorar productos", "url": "productos.html" },
-      { "label": "Ver referencias", "url": "precios.html" }
-    ],
-    "meta": ["Acceso abierto", "Fuentes trazables", "Datos anonimizados"]
-  },
-  "trust": {
-    "label": "Fuentes de referencia"
+  "metricas": [
+    {
+      "valor": "4",
+      "texto": "especies cubiertas por la arquitectura actual"
+    },
+    {
+      "valor": "100%",
+      "texto": "de las cifras futuras deberán mostrar trazabilidad mínima"
+    },
+    {
+      "valor": "0",
+      "texto": "datos de mercado inventados en esta demostración"
+    }
+  ],
+  "porEspecie": {
+    "eyebrow": "Por especie",
+    "titulo": "Cuatro cadenas. Una misma lógica.",
+    "resaltado": "misma lógica",
+    "texto": "Una estructura homogénea para encontrar contexto, fuentes y contenidos relacionados."
   },
   "comoFunciona": {
     "eyebrow": "Cómo funciona",
@@ -25,49 +25,86 @@
     "resaltado": "útil",
     "lede": "DATTANUT propone una ruta simple para reducir dispersión sin convertir información incompleta en certezas.",
     "pasos": [
-      { "titulo": "Explorar", "texto": "Elija una especie o una pregunta sectorial." },
-      { "titulo": "Verificar", "texto": "Revise fuente, periodo, unidad y fecha de corte." },
-      { "titulo": "Profundizar", "texto": "Conecte la referencia con contenido técnico y contexto." }
+      {
+        "titulo": "Explorar",
+        "texto": "Elija una especie o una pregunta sectorial."
+      },
+      {
+        "titulo": "Verificar",
+        "texto": "Revise fuente, periodo, unidad y fecha de corte."
+      },
+      {
+        "titulo": "Profundizar",
+        "texto": "Conecte la referencia con contenido técnico y contexto."
+      }
     ]
   },
-  "porEspecie": {
-    "eyebrow": "Por especie",
-    "titulo": "Cuatro cadenas. Una misma lógica.",
-    "resaltado": "misma lógica",
-    "texto": "Una estructura homogénea para encontrar contexto, fuentes y contenidos relacionados."
-  },
-  "quienes": {
-    "eyebrow": "Quiénes están detrás",
-    "titulo": "Experiencia sectorial con criterio editorial.",
-    "resaltado": "criterio editorial",
-    "lede": "DATTANUT es impulsado por profesionales vinculados al sector agrícola chileno. {contacto} es el contacto del proyecto; las biografías y credenciales ampliadas se publicarán cuando el cliente las valide.",
-    "boton": { "label": "Conocer el proyecto", "url": "contacto.html" }
-  },
-  "metricas": [
-    { "valor": "4", "texto": "especies cubiertas por la arquitectura actual" },
-    { "valor": "100%", "texto": "de las cifras futuras deberán mostrar trazabilidad mínima" },
-    { "valor": "0", "texto": "datos de mercado inventados en esta demostración" }
-  ],
   "agenda": {
     "eyebrow": "Agenda sectorial",
     "titulo": "Publicar solo cuando se puede verificar.",
     "resaltado": "verificar",
     "lede": "La agenda está preparada, pero permanece sin eventos hasta contar con fecha, organización y enlace oficiales.",
-    "boton": { "label": "Ver criterio editorial", "url": "eventos.html" },
+    "boton": {
+      "label": "Ver criterio editorial",
+      "url": "eventos.html"
+    },
     "card": {
       "status": "Agenda en preparación",
       "titulo": "Proponga una actividad",
       "texto": "Evaluaremos pertinencia sectorial, fuente oficial y vigencia antes de publicarla.",
-      "boton": { "label": "Proponer evento", "url": "contacto.html?motivo=Proponer%20contenido" }
+      "boton": {
+        "label": "Proponer evento",
+        "url": "contacto.html?motivo=Proponer%20contenido"
+      }
     }
+  },
+  "cta": {
+    "titulo": "Conecte su experiencia con una mirada sectorial.",
+    "copy": "Participe, proponga contenido o solicite información al equipo DATTANUT."
   },
   "faq": {
     "eyebrow": "Preguntas frecuentes",
     "titulo": "Reglas claras desde el inicio.",
     "resaltado": "inicio"
   },
-  "cta": {
-    "titulo": "Conecte su experiencia con una mirada sectorial.",
-    "copy": "Participe, proponga contenido o solicite información al equipo DATTANUT."
+  "trust": {
+    "label": "Fuentes de referencia"
+  },
+  "hero": {
+    "imagen": "/assets/img/hero-orchard.webp",
+    "imagenAlt": "Huerto de nogales al amanecer",
+    "eyebrow": "Inteligencia sectorial · Chile",
+    "titulo": "Inteligencia que da frutos",
+    "resaltado": "da frutos!",
+    "texto": "Datos de mercado y conocimiento técnico organizado para entender la industria chilena de pecanos, nueces, almendras y avellanas.",
+    "acciones": [
+      {
+        "label": "Explorar productos",
+        "url": "productos.html"
+      },
+      {
+        "label": "Ver referencias",
+        "url": "precios.html"
+      }
+    ],
+    "meta": [
+      "Acceso abierto",
+      "Fuentes trazables",
+      "Datos anonimizados"
+    ]
+  },
+  "quienes": {
+    "eyebrow": "Quiénes están detrás",
+    "titulo": "Experiencia sectorial con criterio editorial.",
+    "resaltado": "criterio editorial",
+    "lede": "DATTANUT es impulsado por profesionales vinculados al sector agrícola chileno. {contacto} es el contacto del proyecto; las biografías y credenciales ampliadas se publicarán cuando el cliente las valide.",
+    "boton": {
+      "label": "Conocer el proyecto",
+      "url": "contacto.html"
+    }
+  },
+  "seo": {
+    "titulo": "Inicio",
+    "descripcion": "Datos y conocimiento para la industria chilena de frutos secos."
   }
 }
