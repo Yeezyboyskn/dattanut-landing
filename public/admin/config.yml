@@ -2,7 +2,8 @@ backend:
   name: github
   repo: Yeezyboyskn/dattanut-landing
   branch: main
-  base_url: https://api.github.com
+  base_url: https://dattanut.dattanut.workers.dev
+  auth_endpoint: auth
 
 locale: 'es'
 
