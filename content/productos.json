@@ -4,6 +4,7 @@
     "descripcion": "Explore pecanos, nueces, almendras, avellanas con una estructura común."
   },
   "hero": {
+    "imagen": "/assets/img/hero-orchard.webp",
     "eyebrow": "Productos",
     "titulo": "Datos por especie, sin perder contexto",
     "resaltado": "sin perder contexto",

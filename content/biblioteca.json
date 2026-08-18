@@ -4,6 +4,7 @@
     "descripcion": "Contenidos por especie con un estado editorial visible."
   },
   "hero": {
+    "imagen": "/assets/img/hero-orchard.webp",
     "eyebrow": "Biblioteca técnica",
     "titulo": "Conocimiento con un estado visible",
     "resaltado": "visible",

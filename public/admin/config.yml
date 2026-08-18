@@ -157,6 +157,7 @@ collections:
             name: trust
             widget: object
             collapsed: true
+            hint: "Las fuentes que se muestran aquí se editan en '1 · Ajustes del sitio → Fuentes de referencia'."
             fields:
               - { label: Título de la franja, name: label, widget: string }
           - label: Sección "Cómo funciona"
@@ -281,6 +282,7 @@ collections:
             widget: object
             collapsed: true
             fields:
+              - { label: Imagen de fondo, name: imagen, widget: image, hint: "Imagen que se muestra detrás del título de esta página." }
               - { label: Línea superior, name: eyebrow, widget: string }
               - { label: Título, name: titulo, widget: string }
               - { label: Palabra destacada del título, name: resaltado, widget: string }
@@ -425,6 +427,7 @@ collections:
                 widget: object
                 collapsed: true
                 fields:
+                  - { label: Imagen de fondo, name: imagen, widget: image, hint: "Imagen que se muestra detrás del título de esta página." }
                   - { label: Línea superior, name: eyebrow, widget: string }
                   - { label: Título, name: titulo, widget: string }
                   - { label: Palabra destacada del título, name: resaltado, widget: string }
@@ -498,6 +501,7 @@ collections:
             widget: object
             collapsed: true
             fields:
+              - { label: Imagen de fondo, name: imagen, widget: image, hint: "Imagen que se muestra detrás del título de esta página." }
               - { label: Línea superior, name: eyebrow, widget: string }
               - { label: Título, name: titulo, widget: string }
               - { label: Palabra destacada del título, name: resaltado, widget: string }
@@ -598,6 +602,7 @@ collections:
                 widget: object
                 collapsed: true
                 fields:
+                  - { label: Imagen de fondo, name: imagen, widget: image, hint: "Imagen que se muestra detrás del título de esta página." }
                   - { label: Línea superior, name: eyebrow, widget: string }
                   - { label: Título, name: titulo, widget: string }
                   - { label: Palabra destacada del título, name: resaltado, widget: string }
@@ -679,6 +684,7 @@ collections:
             widget: object
             collapsed: true
             fields:
+              - { label: Imagen de fondo, name: imagen, widget: image, hint: "Imagen que se muestra detrás del título de esta página." }
               - { label: Línea superior, name: eyebrow, widget: string }
               - { label: Título, name: titulo, widget: string }
               - { label: Palabra destacada del título, name: resaltado, widget: string }
@@ -745,6 +751,7 @@ collections:
             widget: object
             collapsed: true
             fields:
+              - { label: Imagen de fondo, name: heroImagen, widget: image, hint: "Imagen que se muestra detrás del título de esta página." }
               - { label: Título del hero, name: heroTitulo, widget: string }
               - { label: Palabra destacada del título, name: heroResaltado, widget: string }
               - { label: Texto del hero, name: heroTexto, widget: text }
@@ -768,6 +775,7 @@ collections:
             widget: object
             collapsed: true
             fields:
+              - { label: Imagen de fondo, name: heroImagen, widget: image, hint: "Imagen que se muestra detrás del título de esta página." }
               - { label: Título del hero, name: heroTitulo, widget: string }
               - { label: Palabra destacada del título, name: heroResaltado, widget: string }
               - { label: Texto del hero, name: heroTexto, widget: text }

@@ -5,6 +5,7 @@
   },
   "pagina": {
     "hero": {
+      "imagen": "/assets/img/hero-orchard.webp",
       "eyebrow": "Agenda sectorial",
       "titulo": "Eventos con verificación previa",
       "resaltado": "verificación previa",

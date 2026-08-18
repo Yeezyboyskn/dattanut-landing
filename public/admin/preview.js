@@ -175,7 +175,7 @@ var PREVIEW_CSS = [
             hero.meta && hero.meta.length ? h('div', { className: 'dn-meta' }, hero.meta.map(function (m, i) {
               return h('span', { key: i }, m);
             })) : null)),
-        (d.trust && d.trust.label) ? h('div', { className: 'dn-card' }, h('span', { className: 'dn-label' }, d.trust.label), ' ', (d.fuentes ? d.fuentes.join(' · ') : '')) : null,
+        (d.trust && d.trust.label) ? h('div', { className: 'dn-card' }, h('span', { className: 'dn-label' }, d.trust.label), h('p', { className: 'dn-note' }, 'Las fuentes se editan en "Ajustes del sitio".')) : null,
         cf.pasos && cf.pasos.length ? h('div', { className: 'dn-group' },
           h('div', { className: 'dn-group-title' }, cf.eyebrow || 'Cómo funciona'),
           h('div', { className: 'dn-grid' }, cf.pasos.map(function (p, i) {

@@ -4,6 +4,7 @@
     "descripcion": "Converse con el equipo DATTANUT o proponga una colaboración sectorial."
   },
   "hero": {
+    "imagen": "/assets/img/hero-orchard.webp",
     "eyebrow": "Contacto",
     "titulo": "Conversemos sobre información que sirve",
     "resaltado": "información que sirve",

@@ -10,6 +10,7 @@
     }
   },
   "aviso": {
+    "heroImagen": "/assets/img/hero-orchard.webp",
     "heroTitulo": "Alcance de esta demostración",
     "heroResaltado": "demostración",
     "heroTexto": "Condiciones editoriales y de uso que requieren revisión legal antes de producción.",
@@ -32,6 +33,7 @@
     ]
   },
   "privacidad": {
+    "heroImagen": "/assets/img/hero-orchard.webp",
     "heroTitulo": "Privacidad y control",
     "heroResaltado": "control",
     "heroTexto": "Principios aplicados al formulario y a la analítica opcional.",

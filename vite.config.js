@@ -16,6 +16,12 @@ export default defineConfig({
     cssCodeSplit: true,
     rollupOptions: {
       input: Object.fromEntries(pages.map((page) => [page, resolve(process.cwd(), 'src', `${page}.html`)])),
+      output: {
+        assetFileNames: (info) =>
+          info.name && info.name.endsWith('.css')
+            ? 'assets/css/styles.css'
+            : 'assets/[name]-[hash][extname]',
+      },
     },
   },
 });

@@ -5,6 +5,7 @@
   },
   "pagina": {
     "hero": {
+      "imagen": "/assets/img/hero-orchard.webp",
       "eyebrow": "Referencias de mercado",
       "titulo": "Precios con contexto verificable",
       "resaltado": "contexto verificable",
