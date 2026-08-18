@@ -1,3 +1,35 @@
 {
+  "seo": {
+    "titulo": "Eventos",
+    "descripcion": "Agenda sectorial con criterios de verificación antes de publicar."
+  },
+  "pagina": {
+    "hero": {
+      "eyebrow": "Agenda sectorial",
+      "titulo": "Eventos con verificación previa",
+      "resaltado": "verificación previa",
+      "texto": "Solo publicaremos actividades con fecha, organización y enlace oficial confirmados."
+    },
+    "estado": {
+      "eyebrow": "Estado de agenda",
+      "conTitulo": "Eventos confirmados.",
+      "conResaltado": "confirmados",
+      "conLede": "Actividades publicadas tras verificar organización, fecha y enlace oficial.",
+      "sinTitulo": "Sin eventos confirmados por ahora.",
+      "sinResaltado": "por ahora",
+      "sinLede": "Preferimos una agenda breve y confiable a publicar información incompleta. El espacio ya está preparado para integrar encuentros validados."
+    },
+    "criterios": {
+      "status": "Recepción abierta",
+      "titulo": "Criterios para publicar",
+      "items": ["Organización identificable", "Fecha y lugar confirmados", "Enlace oficial vigente", "Relevancia para frutos secos"],
+      "boton": { "label": "Proponer actividad", "url": "contacto.html?motivo=Proponer%20contenido" }
+    }
+  },
+  "estados": {
+    "confirmado": "Confirmado",
+    "organiza": "Organiza:",
+    "verDetalle": "Ver detalle"
+  },
   "eventos": []
 }

@@ -1,0 +1,30 @@
+{
+  "seo": {
+    "titulo": "Contacto",
+    "descripcion": "Converse con el equipo DATTANUT o proponga una colaboración sectorial."
+  },
+  "hero": {
+    "eyebrow": "Contacto",
+    "titulo": "Conversemos sobre información que sirve",
+    "resaltado": "información que sirve",
+    "texto": "Seleccione el motivo y entregue el contexto mínimo para orientar la respuesta."
+  },
+  "canal": {
+    "eyebrow": "Canal directo",
+    "titulo": "Una respuesta contextualizada.",
+    "resaltado": "contextualizada"
+  },
+  "form": {
+    "nombre": "Nombre",
+    "email": "Email",
+    "organizacion": "Organización",
+    "opcional": "(opcional)",
+    "motivo": "Motivo",
+    "seleccione": "Seleccione",
+    "opciones": ["Solicitar información", "Participar como exportador", "Proponer contenido", "Otro"],
+    "mensaje": "Mensaje",
+    "enviar": "Enviar mensaje",
+    "nota": "Datos usados solo para responder su consulta. Sin consentimiento, no se activa analítica.",
+    "asunto": "Nuevo mensaje desde dattanut.com"
+  }
+}

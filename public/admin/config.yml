@@ -6,87 +6,558 @@ backend:
   auth_endpoint: auth
 
 locale: 'es'
+site_url: https://dattanut.com
+display_url: https://dattanut.com
+show_preview_links: true
+logo_url: https://dattanut.com/logo.png
 
-media_folder: "src/assets/img"
-public_folder: "src/assets/img"
+media_folder: "public/assets/img"
+public_folder: "/assets/img"
 
 collections:
-  - name: inicio
-    label: Inicio y contacto
+  - name: ajustes
+    label: "1 · Ajustes del sitio"
+    editor:
+      preview: true
     files:
-      - name: inicio
-        label: Inicio y contacto
+      - name: ajustes
+        label: Ajustes generales (marca, contacto, pie de página)
         file: content/sitio.json
         fields:
-          - { label: Marca, name: marca, widget: string }
-          - { label: Tagline, name: tagline, widget: string }
-          - { label: Título principal (inicio), name: heroTitulo, widget: string }
-          - { label: Palabra destacada en el título, name: heroResaltado, widget: string }
-          - { label: Texto del hero, name: heroTexto, widget: text }
-          - { label: Línea superior del hero, name: heroEyebrow, widget: string }
+          - { label: Nombre de la marca, name: marca, widget: string, required: true }
+          - { label: Tagline (frase corta bajo la marca), name: tagline, widget: string }
+          - label: Aviso superior (barra demostración)
+            name: demoBar
+            widget: text
+            hint: "Se muestra arriba de todo y el visitante puede cerrarla. Déjela vacía para ocultarla."
+          - { label: Descripción SEO del sitio, name: metaDescripcion, widget: text }
+          - label: Texto alternativo de la imagen en redes
+            name: ogImagenAlt
+            widget: string
+            hint: "Se usa cuando la página se comparte en WhatsApp o redes sociales."
+          - label: Menú superior
+            name: nav
+            widget: object
+            collapsed: true
+            hint: "Nombres que se muestran en la barra de navegación."
+            fields:
+              - { label: Inicio, name: inicio, widget: string }
+              - { label: Productos, name: productos, widget: string }
+              - { label: Precios, name: precios, widget: string }
+              - { label: Biblioteca, name: biblioteca, widget: string }
+              - { label: Eventos, name: eventos, widget: string }
+              - { label: Contacto, name: contacto, widget: string }
           - label: Fuentes de referencia
             name: fuentes
             widget: list
+            collapsed: true
+            hint: "Se muestran en la franja de la página de inicio."
             field: { label: Fuente, name: fuente, widget: string }
-          - { label: Nombre del contacto, name: contactoNombre, widget: string }
-          - { label: Email de contacto, name: contactoEmail, widget: string }
-          - { label: Horario de contacto, name: contactoHorario, widget: string }
-          - { label: Texto de respuesta (página contacto), name: contactoRespuesta, widget: text }
-          - { label: Descripción del pie de página, name: footerDescripcion, widget: text }
-          - { label: Línea de fuentes del pie, name: footerFuentes, widget: string }
-          - { label: Aviso de demostración, name: demoBar, widget: string }
-          - { label: Descripción SEO, name: metaDescripcion, widget: text }
-          - label: Pasos "Cómo funciona"
-            name: pasos
-            widget: list
+          - label: Datos de contacto
+            name: contacto
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Nombre del contacto, name: nombre, widget: string }
+              - label: Email de contacto
+                name: email
+                widget: string
+                pattern: ['^[^@\s]+@[^@\s]+\.[^@\s]+$', "Debe ser un email válido, por ejemplo nombre@empresa.cl"]
+              - { label: Horario, name: horario, widget: string }
+              - { label: Texto de respuesta, name: respuesta, widget: text, hint: "Se muestra en la página de contacto." }
+          - label: Pie de página
+            name: footer
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Descripción, name: descripcion, widget: text }
+              - { label: Línea de fuentes, name: fuentes, widget: string }
+              - { label: Aviso legal breve, name: disclaimer, widget: text }
+              - { label: Título de la columna izquierda, name: explorar, widget: string }
+              - { label: Título de la columna derecha, name: contactoYLegal, widget: string }
+              - label: Nombres de los enlaces
+                name: enlaces
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Enlace a Productos, name: productos, widget: string }
+                  - { label: Enlace a Referencias de mercado, name: precios, widget: string }
+                  - { label: Enlace a Biblioteca, name: biblioteca, widget: string }
+                  - { label: Enlace a Eventos, name: eventos, widget: string }
+                  - { label: Enlace a Aviso legal, name: avisoLegal, widget: string }
+                  - { label: Enlace a Privacidad, name: privacidad, widget: string }
+          - label: Aviso de analítica (cookie)
+            name: cookie
+            widget: object
+            collapsed: true
             fields:
               - { label: Título, name: titulo, widget: string }
-              - { label: Texto, name: texto, widget: text }
-
-  - name: especies
-    label: Especies
-    files:
-      - name: especies
-        label: Especies
-        file: content/especies.json
-        fields:
-          - label: Especies
-            name: especies
-            widget: list
+              - { label: Texto, name: texto, widget: string }
+              - { label: Botón aceptar, name: aceptar, widget: string }
+              - { label: Botón rechazar, name: rechazar, widget: string }
+          - label: Textos de interfaz (avanzado)
+            name: ui
+            widget: object
+            collapsed: true
+            hint: "Textos pequeños de accesibilidad. Solo cámbielos si es necesario."
             fields:
-              - { label: Clave (no modificar), name: key, widget: string }
-              - { label: Nombre, name: name, widget: string }
-              - { label: Nombre científico, name: latin, widget: string }
-              - { label: Imagen, name: image, widget: image }
-              - { label: Descripción, name: copy, widget: text }
+              - { label: Saltar al contenido, name: saltarAlContenido, widget: string }
+              - { label: Abrir menú, name: abrirMenu, widget: string }
+              - { label: Cerrar aviso, name: cerrarAviso, widget: string }
+              - { label: Ir al inicio, name: irAlInicio, widget: string }
+              - { label: Migas de pan, name: breadcrumbInicio, widget: string }
+              - { label: Migas de pan (accesibilidad), name: migasDePan, widget: string }
+              - { label: Palabra "Conversemos", name: conversemos, widget: string }
+              - { label: Botón "Contactar al equipo", name: contactarEquipo, widget: string }
+
+  - name: inicio
+    label: "2 · Página de inicio"
+    editor:
+      preview: true
+    files:
+      - name: inicio
+        label: Todo el contenido de la página de inicio
+        file: content/inicio.json
+        fields:
+          - label: SEO de la página
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título para buscadores, name: titulo, widget: string }
+              - { label: Descripción para buscadores, name: descripcion, widget: text }
+          - label: Sección principal (hero)
+            name: hero
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Imagen de fondo, name: imagen, widget: image, hint: "Suba la imagen que desee o elija una de la biblioteca." }
+              - { label: Texto alternativo de la imagen, name: imagenAlt, widget: string }
+              - { label: Línea superior pequeña, name: eyebrow, widget: string }
+              - { label: Título principal, name: titulo, widget: string }
+              - label: Palabra destacada del título
+                name: resaltado
+                widget: string
+                hint: "Parte del título que se muestra en color dorado. Debe estar escrita igual dentro del título."
+              - { label: Texto de bienvenida, name: texto, widget: text }
+              - label: Botones principales
+                name: acciones
+                widget: list
+                collapsed: true
+                hint: "Hasta 2 botones. El primero se muestra dorado y el segundo con borde."
+                fields:
+                  - { label: Texto del botón, name: label, widget: string }
+                  - { label: Página de destino, name: url, widget: string, hint: "Por ejemplo: productos.html" }
+              - label: Frases bajo los botones
+                name: meta
+                widget: list
+                collapsed: true
+                field: { label: Frase, name: frase, widget: string }
+          - label: Franja de fuentes de referencia
+            name: trust
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título de la franja, name: label, widget: string }
+          - label: Sección "Cómo funciona"
+            name: comoFunciona
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Línea superior, name: eyebrow, widget: string }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Palabra destacada del título, name: resaltado, widget: string }
+              - { label: Texto de introducción, name: lede, widget: text }
+              - label: Pasos
+                name: pasos
+                widget: list
+                collapsed: true
+                hint: "Los pasos se numeran automáticamente."
+                fields:
+                  - { label: Título del paso, name: titulo, widget: string }
+                  - { label: Texto del paso, name: texto, widget: text }
+          - label: Sección "Por especie"
+            name: porEspecie
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Línea superior, name: eyebrow, widget: string }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Palabra destacada del título, name: resaltado, widget: string }
+              - { label: Texto de introducción, name: texto, widget: text }
+          - label: Sección "Quiénes están detrás"
+            name: quienes
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Línea superior, name: eyebrow, widget: string }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Palabra destacada del título, name: resaltado, widget: string }
+              - label: Texto de introducción
+                name: lede
+                widget: text
+                hint: "Escriba {contacto} y se insertará automáticamente el nombre del contacto configurado."
+              - label: Botón
+                name: boton
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Texto del botón, name: label, widget: string }
+                  - { label: Página de destino, name: url, widget: string }
+          - label: Cifras destacadas
+            name: metricas
+            widget: list
+            collapsed: true
+            hint: "Tarjetas con números. El número puede ser un texto: 4, 100%, 0, etc."
+            fields:
+              - { label: Número, name: valor, widget: string }
+              - { label: Texto explicativo, name: texto, widget: string }
+          - label: Sección "Agenda"
+            name: agenda
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Línea superior, name: eyebrow, widget: string }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Palabra destacada del título, name: resaltado, widget: string }
+              - { label: Texto de introducción, name: lede, widget: text }
+              - label: Enlace "Ver criterio editorial"
+                name: boton
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Texto del botón, name: label, widget: string }
+                  - { label: Página de destino, name: url, widget: string }
+              - label: Tarjeta de invitación
+                name: card
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Etiqueta de estado, name: status, widget: string }
+                  - { label: Título, name: titulo, widget: string }
+                  - { label: Texto, name: texto, widget: text }
+                  - label: Botón
+                    name: boton
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - { label: Texto del botón, name: label, widget: string }
+                      - { label: Página de destino, name: url, widget: string }
+          - label: Sección de preguntas frecuentes
+            name: faq
+            widget: object
+            collapsed: true
+            hint: "Las preguntas mismas se editan en la colección '11 · Preguntas frecuentes'."
+            fields:
+              - { label: Línea superior, name: eyebrow, widget: string }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Palabra destacada del título, name: resaltado, widget: string }
+          - label: Mensaje final (invitación a conversar)
+            name: cta
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: Texto, name: copy, widget: text }
+
+  - name: productos
+    label: "3 · Productos y fichas de especie"
+    editor:
+      preview: true
+    files:
+      - name: productos
+        label: Página de productos y textos de las fichas de especie
+        file: content/productos.json
+        fields:
+          - label: SEO de la página
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título para buscadores, name: titulo, widget: string }
+              - { label: Descripción para buscadores, name: descripcion, widget: text }
+          - label: Sección principal (hero)
+            name: hero
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Línea superior, name: eyebrow, widget: string }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Palabra destacada del título, name: resaltado, widget: string }
+              - { label: Texto, name: texto, widget: text }
+          - label: Texto de las tarjetas de especie
+            name: cardCta
+            widget: string
+            hint: "Frase que aparece en cada tarjeta de especie (inicio y productos)."
+          - label: Sección "Arquitectura común"
+            name: arquitectura
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Línea superior, name: eyebrow, widget: string }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Palabra destacada del título, name: resaltado, widget: string }
+              - label: Las tres capas
+                name: cards
+                widget: list
+                collapsed: true
+                hint: "Se recomienda mantener 3 tarjetas."
+                fields:
+                  - { label: Número y nombre corto, name: label, widget: string }
+                  - { label: Título, name: titulo, widget: string }
+                  - { label: Texto, name: texto, widget: text }
+          - label: Mensaje final de la página
+            name: cta
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: Texto, name: copy, widget: text }
+              - label: Botón
+                name: boton
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Texto del botón, name: label, widget: string }
+                  - { label: Página de destino, name: url, widget: string }
+          - label: Textos de las fichas de cada especie
+            name: especie
+            widget: object
+            collapsed: true
+            hint: "Se aplican a las 4 páginas de especie (Pecanos, Nueces, Almendras y Avellanas)."
+            fields:
+              - label: Línea superior del hero
+                name: fichaEyebrow
+                widget: string
+                hint: "Escriba {latin} para insertar el nombre científico de la especie."
+              - label: Sección "Panorama"
+                name: panorama
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Línea superior, name: eyebrow, widget: string }
+                  - { label: Título, name: titulo, widget: string }
+                  - { label: Palabra destacada del título, name: resaltado, widget: string }
+                  - { label: Aviso sobre los datos, name: notice, widget: text }
+              - label: Lista "Criterios mínimos"
+                name: criterios
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Título de la lista, name: label, widget: string }
+                  - label: Criterios
+                    name: items
+                    widget: list
+                    collapsed: true
+                    field: { label: Criterio, name: criterio, widget: string }
+              - label: Sección "Referencias de mercado"
+                name: referencias
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Línea superior, name: eyebrow, widget: string }
+                  - { label: Título, name: titulo, widget: string }
+                  - { label: Palabra destacada del título, name: resaltado, widget: string }
+                  - { label: Texto, name: texto, widget: text }
+              - label: Botones de la página
+                name: acciones
+                widget: object
+                collapsed: true
+                fields:
+                  - label: Botón "Ver biblioteca"
+                    name: biblioteca
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - { label: Texto del botón, name: label, widget: string }
+                      - label: Página de destino
+                        name: url
+                        widget: string
+                        hint: "Escriba {especie} para insertar automáticamente la especie."
+                  - label: Botón "Solicitar información"
+                    name: solicitar
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - { label: Texto del botón, name: label, widget: string }
+                      - { label: Página de destino, name: url, widget: string }
+              - label: Mensaje final de la ficha
+                name: cta
+                widget: object
+                collapsed: true
+                fields:
+                  - label: Título
+                    name: titulo
+                    widget: string
+                    hint: "Escriba {nombre} para insertar el nombre de la especie."
+                  - { label: Texto, name: copy, widget: text }
+                  - label: Botón
+                    name: boton
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - { label: Texto del botón, name: label, widget: string }
+                      - { label: Página de destino, name: url, widget: string }
 
   - name: precios
-    label: Referencias de precio
+    label: "4 · Referencias de precio"
+    editor:
+      preview: true
     files:
       - name: precios
-        label: Referencias de precio
+        label: Página de precios y datos de la tabla
         file: content/precios.json
         fields:
+          - label: SEO de la página
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título para buscadores, name: titulo, widget: string }
+              - { label: Descripción para buscadores, name: descripcion, widget: text }
+          - label: Textos de la página
+            name: pagina
+            widget: object
+            collapsed: true
+            fields:
+              - label: Sección principal (hero)
+                name: hero
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Línea superior, name: eyebrow, widget: string }
+                  - { label: Título, name: titulo, widget: string }
+                  - { label: Palabra destacada del título, name: resaltado, widget: string }
+                  - { label: Texto, name: texto, widget: text }
+              - label: Filtros
+                name: filtros
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Etiqueta "Buscar", name: buscar, widget: string }
+                  - { label: Texto de ejemplo en la búsqueda, name: placeholder, widget: string }
+                  - { label: Etiqueta "Especie", name: especie, widget: string }
+                  - { label: Opción "Todas", name: todas, widget: string }
+              - label: Tabla
+                name: tabla
+                widget: object
+                collapsed: true
+                fields:
+                  - label: Encabezados de la tabla
+                    name: headers
+                    widget: list
+                    collapsed: true
+                    field: { label: Encabezado, name: header, widget: string }
+                  - { label: Etiqueta de unidad, name: unidad, widget: string }
+                  - { label: Etiqueta de dataset, name: dataset, widget: string }
+                  - { label: Texto cuando falta el dato, name: pendiente, widget: string }
+                  - { label: Texto "Por confirmar", name: porConfirmar, widget: string }
+              - label: Mensaje cuando no hay resultados
+                name: vacio
+                widget: string
+          - label: Mensaje final de la página
+            name: cta
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: Texto, name: copy, widget: text }
           - label: Filas de la tabla de precios
             name: precios
             widget: list
+            collapsed: true
+            hint: "Una fila por especie. Deje 'Referencia' vacía para que se muestre el texto 'Dato sujeto a validación'."
             fields:
-              - { label: Especie (clave), name: species, widget: string }
+              - label: Especie
+                name: species
+                widget: select
+                options: [pecanos, nueces, almendras, avellanas]
               - { label: Referencia, name: reference, widget: string }
-              - { label: Periodo, name: period, widget: string }
+              - { label: Periodo, name: period, widget: string, hint: "Por ejemplo: Ene 2026" }
               - { label: Fuente, name: source, widget: string }
               - { label: Fecha de corte, name: cut, widget: string }
 
   - name: biblioteca
-    label: Biblioteca
+    label: "5 · Página de biblioteca"
+    editor:
+      preview: true
+    files:
+      - name: biblioteca
+        label: Textos de la página de biblioteca
+        file: content/biblioteca.json
+        fields:
+          - label: SEO de la página
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título para buscadores, name: titulo, widget: string }
+              - { label: Descripción para buscadores, name: descripcion, widget: text }
+          - label: Sección principal (hero)
+            name: hero
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Línea superior, name: eyebrow, widget: string }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Palabra destacada del título, name: resaltado, widget: string }
+              - { label: Texto, name: texto, widget: text }
+          - label: Filtros
+            name: filtros
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Etiqueta "Buscar", name: buscar, widget: string }
+              - { label: Texto de ejemplo en la búsqueda, name: placeholder, widget: string }
+              - { label: Etiqueta "Especie", name: especie, widget: string }
+              - { label: Opción "Todas", name: todas, widget: string }
+              - { label: Etiqueta "Estado", name: estado, widget: string }
+              - { label: Opción "Todos", name: todos, widget: string }
+              - label: Opciones de estado
+                name: estados
+                widget: list
+                collapsed: true
+                field: { label: Estado, name: estado, widget: string }
+          - label: Etiqueta de artículos transversales
+            name: transversal
+            widget: string
+            hint: "Se muestra cuando un artículo corresponde a todas las especies."
+          - label: Mensaje cuando no hay resultados
+            name: vacio
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: Texto, name: texto, widget: string }
+          - label: Mensaje final de la página
+            name: cta
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: Texto, name: copy, widget: text }
+              - label: Botón
+                name: boton
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Texto del botón, name: label, widget: string }
+                  - { label: Página de destino, name: url, widget: string }
+
+  - name: articulos
+    label: "6 · Artículos de biblioteca"
+    editor:
+      preview: true
     files:
       - name: articulos
-        label: Artículos
+        label: Los artículos que aparecen en la biblioteca
         file: content/articulos.json
         fields:
-          - label: Artículos de la biblioteca
+          - label: Artículos
             name: articulos
             widget: list
+            collapsed: true
+            hint: "Cada artículo aparece como una tarjeta en la biblioteca."
             fields:
               - { label: Título, name: title, widget: string }
               - { label: Resumen, name: summary, widget: text }
@@ -94,42 +565,281 @@ collections:
                 name: species
                 widget: select
                 options: [todas, pecanos, nueces, almendras, avellanas]
+                hint: "'todas' significa que aplica a todas las especies."
               - label: Estado editorial
                 name: state
                 widget: select
                 options: [Validado, "En revisión", "Por validar"]
+                hint: "El visitante puede filtrar por este estado."
+
+  - name: eventos
+    label: "7 · Página de eventos"
+    editor:
+      preview: true
+    files:
+      - name: eventos
+        label: Textos de la página y eventos publicados
+        file: content/eventos.json
+        fields:
+          - label: SEO de la página
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título para buscadores, name: titulo, widget: string }
+              - { label: Descripción para buscadores, name: descripcion, widget: text }
+          - label: Textos de la página
+            name: pagina
+            widget: object
+            collapsed: true
+            fields:
+              - label: Sección principal (hero)
+                name: hero
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Línea superior, name: eyebrow, widget: string }
+                  - { label: Título, name: titulo, widget: string }
+                  - { label: Palabra destacada del título, name: resaltado, widget: string }
+                  - { label: Texto, name: texto, widget: text }
+              - label: Sección "Estado de agenda"
+                name: estado
+                widget: object
+                collapsed: true
+                hint: "Textos que cambian según haya o no eventos."
+                fields:
+                  - { label: Línea superior, name: eyebrow, widget: string }
+                  - { label: Título cuando hay eventos, name: conTitulo, widget: string }
+                  - { label: Palabra destacada (con eventos), name: conResaltado, widget: string }
+                  - { label: Texto cuando hay eventos, name: conLede, widget: text }
+                  - { label: Título cuando no hay eventos, name: sinTitulo, widget: string }
+                  - { label: Palabra destacada (sin eventos), name: sinResaltado, widget: string }
+                  - { label: Texto cuando no hay eventos, name: sinLede, widget: text }
+              - label: Tarjeta "Criterios para publicar"
+                name: criterios
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Etiqueta de estado, name: status, widget: string }
+                  - { label: Título, name: titulo, widget: string }
+                  - label: Criterios
+                    name: items
+                    widget: list
+                    collapsed: true
+                    field: { label: Criterio, name: criterio, widget: string }
+                  - label: Botón
+                    name: boton
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - { label: Texto del botón, name: label, widget: string }
+                      - { label: Página de destino, name: url, widget: string }
+          - label: Textos de las tarjetas de evento
+            name: estados
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Estado por defecto, name: confirmado, widget: string }
+              - { label: Palabra "Organiza:", name: organiza, widget: string }
+              - { label: Botón "Ver detalle", name: verDetalle, widget: string }
+          - label: Eventos publicados
+            name: eventos
+            widget: list
+            collapsed: true
+            hint: "Cada evento aparece como una tarjeta en la agenda."
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Fecha, name: date, widget: string, hint: "Por ejemplo: 12 de marzo de 2026" }
+              - { label: Lugar, name: place, widget: string }
+              - { label: Organización, name: org, widget: string }
+              - { label: Enlace oficial, name: link, widget: string, hint: "Debe empezar con https://" }
+              - label: Estado
+                name: state
+                widget: select
+                options: [Confirmado, "En revisión"]
+
+  - name: contacto
+    label: "8 · Página de contacto"
+    editor:
+      preview: true
+    files:
+      - name: contacto
+        label: Textos de la página de contacto y del formulario
+        file: content/contacto.json
+        fields:
+          - label: SEO de la página
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título para buscadores, name: titulo, widget: string }
+              - { label: Descripción para buscadores, name: descripcion, widget: text }
+          - label: Sección principal (hero)
+            name: hero
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Línea superior, name: eyebrow, widget: string }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Palabra destacada del título, name: resaltado, widget: string }
+              - { label: Texto, name: texto, widget: text }
+          - label: Sección "Canal directo"
+            name: canal
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Línea superior, name: eyebrow, widget: string }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Palabra destacada del título, name: resaltado, widget: string }
+          - label: Formulario
+            name: form
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Etiqueta "Nombre", name: nombre, widget: string }
+              - { label: Etiqueta "Email", name: email, widget: string }
+              - { label: Etiqueta "Organización", name: organizacion, widget: string }
+              - { label: Nota "(opcional)", name: opcional, widget: string }
+              - { label: Etiqueta "Motivo", name: motivo, widget: string }
+              - { label: Opción inicial "Seleccione", name: seleccione, widget: string }
+              - label: Opciones de motivo
+                name: opciones
+                widget: list
+                collapsed: true
+                field: { label: Motivo, name: motivo, widget: string }
+              - { label: Etiqueta "Mensaje", name: mensaje, widget: string }
+              - { label: Botón "Enviar mensaje", name: enviar, widget: string }
+              - { label: Nota bajo el botón, name: nota, widget: text }
+              - { label: Asunto del correo, name: asunto, widget: string }
+
+  - name: legales
+    label: "9 · Páginas legales"
+    editor:
+      preview: true
+    files:
+      - name: legales
+        label: Textos del aviso legal y de la política de privacidad
+        file: content/legales.json
+        fields:
+          - label: SEO de las páginas
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - label: Aviso legal
+                name: aviso
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Título para buscadores, name: titulo, widget: string }
+                  - { label: Descripción para buscadores, name: descripcion, widget: text }
+              - label: Privacidad
+                name: privacidad
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Título para buscadores, name: titulo, widget: string }
+                  - { label: Descripción para buscadores, name: descripcion, widget: text }
+          - label: Aviso legal
+            name: aviso
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título del hero, name: heroTitulo, widget: string }
+              - { label: Palabra destacada del título, name: heroResaltado, widget: string }
+              - { label: Texto del hero, name: heroTexto, widget: text }
+              - { label: Línea superior, name: eyebrow, widget: string }
+              - { label: Título de la sección, name: titulo, widget: string }
+              - { label: Texto de introducción, name: intro, widget: text }
+              - label: Secciones
+                name: secciones
+                widget: list
+                collapsed: true
+                hint: "Cada sección tiene un título y uno o más párrafos."
+                fields:
+                  - { label: Título de la sección, name: heading, widget: string }
+                  - label: Párrafos
+                    name: parrafos
+                    widget: list
+                    collapsed: true
+                    field: { label: Párrafo, name: parrafo, widget: text }
+          - label: Política de privacidad
+            name: privacidad
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Título del hero, name: heroTitulo, widget: string }
+              - { label: Palabra destacada del título, name: heroResaltado, widget: string }
+              - { label: Texto del hero, name: heroTexto, widget: text }
+              - { label: Línea superior, name: eyebrow, widget: string }
+              - { label: Título de la sección, name: titulo, widget: string }
+              - { label: Texto de introducción, name: intro, widget: text }
+              - label: Secciones
+                name: secciones
+                widget: list
+                collapsed: true
+                hint: "Cada sección tiene un título y uno o más párrafos."
+                fields:
+                  - { label: Título de la sección, name: heading, widget: string }
+                  - label: Párrafos
+                    name: parrafos
+                    widget: list
+                    collapsed: true
+                    field: { label: Párrafo, name: parrafo, widget: text }
+          - label: Tarjeta lateral
+            name: aside
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Etiqueta de estado, name: status, widget: string }
+              - { label: Título, name: titulo, widget: string }
+
+  - name: especies
+    label: "10 · Fichas de especie"
+    editor:
+      preview: true
+    files:
+      - name: especies
+        label: Las cuatro especies y sus páginas
+        file: content/especies.json
+        fields:
+          - label: Especies
+            name: especies
+            widget: list
+            collapsed: true
+            hint: "Cada especie genera una página propia. Puede agregar más."
+            fields:
+              - label: Clave interna
+                name: key
+                widget: string
+                hint: "No la modifique en especies existentes: identifica la página (por ejemplo 'pecanos'). Para una nueva, use una palabra corta en minúscula."
+              - { label: Nombre, name: name, widget: string }
+              - { label: Nombre científico, name: latin, widget: string }
+              - { label: Imagen, name: image, widget: image }
+              - { label: Texto alternativo de la imagen, name: alt, widget: string }
+              - { label: Descripción, name: copy, widget: text }
+              - label: SEO de la página
+                name: seo
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Título para buscadores, name: titulo, widget: string }
+                  - { label: Descripción para buscadores, name: descripcion, widget: text }
 
   - name: faq
-    label: Preguntas frecuentes
+    label: "11 · Preguntas frecuentes"
+    editor:
+      preview: true
     files:
       - name: faq
-        label: Preguntas frecuentes
+        label: Las preguntas frecuentes del sitio
         file: content/faq.json
         fields:
           - label: Preguntas frecuentes
             name: faq
             widget: list
+            collapsed: true
+            hint: "Se muestran en la página de inicio."
             fields:
               - { label: Pregunta, name: question, widget: string }
               - { label: Respuesta, name: answer, widget: text }
-
-  - name: eventos
-    label: Eventos
-    files:
-      - name: eventos
-        label: Eventos
-        file: content/eventos.json
-        fields:
-          - label: Eventos publicados
-            name: eventos
-            widget: list
-            fields:
-              - { label: Título, name: title, widget: string }
-              - { label: Fecha, name: date, widget: string }
-              - { label: Lugar, name: place, widget: string }
-              - { label: Organización, name: org, widget: string }
-              - { label: Enlace oficial, name: link, widget: string }
-              - label: Estado
-                name: state
-                widget: select
-                options: [Confirmado, "En revisión"]

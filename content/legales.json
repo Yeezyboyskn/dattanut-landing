@@ -1,0 +1,60 @@
+{
+  "seo": {
+    "aviso": {
+      "titulo": "Aviso legal",
+      "descripcion": "Alcance y condiciones de uso de esta demostración."
+    },
+    "privacidad": {
+      "titulo": "Privacidad",
+      "descripcion": "Principios de privacidad, formularios y consentimiento analítico."
+    }
+  },
+  "aviso": {
+    "heroTitulo": "Alcance de esta demostración",
+    "heroResaltado": "demostración",
+    "heroTexto": "Condiciones editoriales y de uso que requieren revisión legal antes de producción.",
+    "eyebrow": "Alcance",
+    "titulo": "Uso informativo del sitio",
+    "intro": "Este sitio es una demostración editorial de DATTANUT. El texto definitivo deberá ser revisado por asesoría legal antes del lanzamiento de producción.",
+    "secciones": [
+      {
+        "heading": "Exactitud y actualización",
+        "parrafos": ["DATTANUT busca mostrar fuente, periodo, unidad y fecha de corte. La información cambia y debe revisarse antes de decidir."]
+      },
+      {
+        "heading": "Propiedad y uso",
+        "parrafos": ["La identidad, estructura y contenidos no pueden reutilizarse de forma que induzca a error sobre su origen."]
+      },
+      {
+        "heading": "Limitación sectorial",
+        "parrafos": ["El contenido no reemplaza asesoría agronómica, análisis de laboratorio, visita a terreno ni revisión normativa."]
+      }
+    ]
+  },
+  "privacidad": {
+    "heroTitulo": "Privacidad y control",
+    "heroResaltado": "control",
+    "heroTexto": "Principios aplicados al formulario y a la analítica opcional.",
+    "eyebrow": "Principios",
+    "titulo": "Datos mínimos y consentimiento",
+    "intro": "Solicitamos nombre, email, motivo, mensaje y organización opcional para gestionar consultas. El formulario usa FormSubmit y la dirección receptora debe activarse antes de producción.",
+    "secciones": [
+      {
+        "heading": "Analítica",
+        "parrafos": ["GA4 permanece desactivado hasta obtener consentimiento. La preferencia se guarda localmente."]
+      },
+      {
+        "heading": "Conservación y derechos",
+        "parrafos": ["La política final deberá definir responsable, plazos y mecanismos de acceso, rectificación o eliminación."]
+      },
+      {
+        "heading": "Datos sectoriales",
+        "parrafos": ["Los aportes de exportadores deben anonimizarse y publicarse de forma agregada."]
+      }
+    ]
+  },
+  "aside": {
+    "status": "Revisión legal pendiente",
+    "titulo": "Responsable del proyecto"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "seo": {
+    "titulo": "Biblioteca técnica",
+    "descripcion": "Contenidos por especie con un estado editorial visible."
+  },
+  "hero": {
+    "eyebrow": "Biblioteca técnica",
+    "titulo": "Conocimiento con un estado visible",
+    "resaltado": "visible",
+    "texto": "Busque por especie y nivel de revisión editorial."
+  },
+  "filtros": {
+    "buscar": "Buscar",
+    "placeholder": "Tema o palabra clave",
+    "especie": "Especie",
+    "todas": "Todas",
+    "estado": "Estado",
+    "todos": "Todos",
+    "estados": ["Validado", "En revisión", "Por validar"]
+  },
+  "transversal": "Transversal",
+  "vacio": {
+    "titulo": "Sin resultados",
+    "texto": "Pruebe otra palabra o restablezca los filtros."
+  },
+  "cta": {
+    "titulo": "¿Tiene conocimiento que aportar?",
+    "copy": "Proponer no garantiza publicación: todo contenido pasa por revisión editorial.",
+    "boton": { "label": "Proponer contenido", "url": "contacto.html?motivo=Proponer%20contenido" }
+  }
+}

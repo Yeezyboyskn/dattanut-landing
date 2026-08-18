@@ -1,22 +1,53 @@
 {
   "marca": "DATTANUT",
   "tagline": "Inteligencia que da frutos",
-  "heroEyebrow": "Inteligencia sectorial · Chile",
-  "heroTitulo": "Inteligencia que da frutos",
-  "heroResaltado": "da frutos",
-  "heroTexto": "Datos de mercado y conocimiento técnico organizado para entender la industria chilena de pecanos, nueces, almendras y avellanas.",
-  "fuentes": ["ODEPA", "Aduanas", "INC", "USDA"],
-  "contactoNombre": "Richard López",
-  "contactoEmail": "contacto@dattanut.com",
-  "contactoHorario": "Lunes a viernes · horario de oficina · Chile",
-  "contactoRespuesta": "Richard López es el contacto del proyecto. Respondemos normalmente dentro de 48 horas hábiles.",
-  "footerDescripcion": "Una plataforma chilena para ordenar y contextualizar información técnica y comercial sobre frutos secos.",
-  "footerFuentes": "Fuentes de referencia: ODEPA, Aduanas, INC y USDA. Todo dato publicado debe indicar fuente, periodo y corte.",
   "demoBar": "Demostración editorial · Los datos reales siguen sujetos a validación del cliente.",
   "metaDescripcion": "Datos y conocimiento para la industria chilena de frutos secos.",
-  "pasos": [
-    { "titulo": "Explorar", "texto": "Elija una especie o una pregunta sectorial." },
-    { "titulo": "Verificar", "texto": "Revise fuente, periodo, unidad y fecha de corte." },
-    { "titulo": "Profundizar", "texto": "Conecte la referencia con contenido técnico y contexto." }
-  ]
+  "ogImagenAlt": "DATTANUT, inteligencia y trazabilidad para frutos secos de Chile",
+  "nav": {
+    "inicio": "Inicio",
+    "productos": "Productos",
+    "precios": "Precios",
+    "biblioteca": "Biblioteca",
+    "eventos": "Eventos",
+    "contacto": "Contacto"
+  },
+  "fuentes": ["ODEPA", "Aduanas", "INC", "USDA"],
+  "contacto": {
+    "nombre": "Richard López",
+    "email": "contacto@dattanut.com",
+    "horario": "Lunes a viernes · horario de oficina · Chile",
+    "respuesta": "Richard López es el contacto del proyecto. Respondemos normalmente dentro de 48 horas hábiles."
+  },
+  "footer": {
+    "descripcion": "Una plataforma chilena para ordenar y contextualizar información técnica y comercial sobre frutos secos.",
+    "fuentes": "Fuentes de referencia: ODEPA, Aduanas, INC y USDA. Todo dato publicado debe indicar fuente, periodo y corte.",
+    "disclaimer": "Información educativa y sectorial. No reemplaza asesoría agronómica, análisis de laboratorio, visita a terreno ni revisión normativa.",
+    "explorar": "Explorar",
+    "contactoYLegal": "Contacto y legal",
+    "enlaces": {
+      "productos": "Productos",
+      "precios": "Referencias de mercado",
+      "biblioteca": "Biblioteca",
+      "eventos": "Eventos",
+      "avisoLegal": "Aviso legal",
+      "privacidad": "Privacidad"
+    }
+  },
+  "cookie": {
+    "titulo": "Analítica bajo su control.",
+    "texto": "GA4 solo se activa después de su autorización.",
+    "aceptar": "Aceptar",
+    "rechazar": "Rechazar"
+  },
+  "ui": {
+    "saltarAlContenido": "Saltar al contenido",
+    "abrirMenu": "Abrir menú",
+    "cerrarAviso": "Cerrar aviso",
+    "irAlInicio": "ir al inicio",
+    "breadcrumbInicio": "Inicio",
+    "migasDePan": "Migas de pan",
+    "conversemos": "Conversemos",
+    "contactarEquipo": "Contactar al equipo"
+  }
 }

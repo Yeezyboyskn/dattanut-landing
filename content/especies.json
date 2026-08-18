@@ -4,29 +4,49 @@
       "key": "pecanos",
       "name": "Pecanos",
       "latin": "Carya illinoinensis",
-      "image": "pecans.webp",
-      "copy": "Una alternativa de diversificación que exige combinar lectura agronómica, comercial y territorial."
+      "image": "/assets/img/pecans.webp",
+      "alt": "Pecanos sobre una superficie oscura",
+      "copy": "Una alternativa de diversificación que exige combinar lectura agronómica, comercial y territorial.",
+      "seo": {
+        "titulo": "Pecanos",
+        "descripcion": "Una alternativa de diversificación que exige combinar lectura agronómica, comercial y territorial."
+      }
     },
     {
       "key": "nueces",
       "name": "Nueces",
       "latin": "Juglans regia",
-      "image": "walnuts.webp",
-      "copy": "Una cadena consolidada y exportadora, donde calidad, condición y destino explican buena parte del valor."
+      "image": "/assets/img/walnuts.webp",
+      "alt": "Nueces sobre una superficie oscura",
+      "copy": "Una cadena consolidada y exportadora, donde calidad, condición y destino explican buena parte del valor.",
+      "seo": {
+        "titulo": "Nueces",
+        "descripcion": "Una cadena consolidada y exportadora, donde calidad, condición y destino explican buena parte del valor."
+      }
     },
     {
       "key": "almendras",
       "name": "Almendras",
       "latin": "Prunus dulcis",
-      "image": "almonds.webp",
-      "copy": "Una categoría que conviene leer conectando oferta local, importaciones y referencias internacionales."
+      "image": "/assets/img/almonds.webp",
+      "alt": "Almendras sobre una superficie oscura",
+      "copy": "Una categoría que conviene leer conectando oferta local, importaciones y referencias internacionales.",
+      "seo": {
+        "titulo": "Almendras",
+        "descripcion": "Una categoría que conviene leer conectando oferta local, importaciones y referencias internacionales."
+      }
     },
     {
       "key": "avellanas",
       "name": "Avellanas",
       "latin": "Corylus avellana",
-      "image": "hazelnuts.webp",
-      "copy": "Una cadena de largo plazo en expansión, vinculada con demanda industrial y decisiones de huerto."
+      "image": "/assets/img/hazelnuts.webp",
+      "alt": "Avellanas sobre una superficie oscura",
+      "copy": "Una cadena de largo plazo en expansión, vinculada con demanda industrial y decisiones de huerto.",
+      "seo": {
+        "titulo": "Avellanas",
+        "descripcion": "Una cadena de largo plazo en expansión, vinculada con demanda industrial y decisiones de huerto."
+      }
     }
   ]
 }

@@ -1,4 +1,34 @@
 {
+  "seo": {
+    "titulo": "Referencias de mercado",
+    "descripcion": "Referencias preparadas para publicar datos con fuente, periodo, unidad y fecha de corte."
+  },
+  "pagina": {
+    "hero": {
+      "eyebrow": "Referencias de mercado",
+      "titulo": "Precios con contexto verificable",
+      "resaltado": "contexto verificable",
+      "texto": "La estructura está lista para cifras reales; el dataset final aún no ha sido entregado."
+    },
+    "filtros": {
+      "buscar": "Buscar",
+      "placeholder": "Especie, fuente o periodo",
+      "especie": "Especie",
+      "todas": "Todas"
+    },
+    "tabla": {
+      "headers": ["Especie", "Referencia", "Periodo", "Fuente", "Corte"],
+      "unidad": "Unidad: por definir",
+      "dataset": "Dataset: pendiente del cliente",
+      "pendiente": "Dato sujeto a validación",
+      "porConfirmar": "Por confirmar"
+    },
+    "vacio": "No hay coincidencias con los filtros actuales."
+  },
+  "cta": {
+    "titulo": "¿Necesita una lectura específica?",
+    "copy": "Cuéntenos qué especie, periodo y unidad necesita revisar."
+  },
   "precios": [
     {
       "species": "pecanos",
