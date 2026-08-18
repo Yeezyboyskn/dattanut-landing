@@ -32,5 +32,25 @@
       if (boot) boot.remove();
     });
   </script>
+  <script>
+    (function () {
+      var THEME_ID = 'dattanut-theme';
+      function applyTheme() {
+        fetch('theme.css').then(function (r) { return r.text(); }).then(function (css) {
+          var style = document.getElementById(THEME_ID);
+          if (!style) { style = document.createElement('style'); style.id = THEME_ID; document.head.appendChild(style); }
+          style.textContent = css;
+        }).catch(function () {});
+      }
+      applyTheme();
+      window.addEventListener('load', applyTheme);
+      setInterval(applyTheme, 4000);
+      var mo = new MutationObserver(function () {
+        var style = document.getElementById(THEME_ID);
+        if (style && document.head.lastChild !== style) document.head.appendChild(style);
+      });
+      mo.observe(document.head, { childList: true });
+    })();
+  </script>
 </body>
 </html>
