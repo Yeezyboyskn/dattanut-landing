@@ -2,7 +2,7 @@ import { writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
 const root = resolve(process.cwd(), 'src');
-const origin = 'https://yeezyboyskn.github.io/dattanut-landing/';
+const origin = 'https://dattanut.com/';
 const species = {
   pecanos: ['Pecanos', 'Carya illinoinensis', 'pecans.webp', 'Una alternativa de diversificación que exige combinar lectura agronómica, comercial y territorial.'],
   nueces: ['Nueces', 'Juglans regia', 'walnuts.webp', 'Una cadena consolidada y exportadora, donde calidad, condición y destino explican buena parte del valor.'],

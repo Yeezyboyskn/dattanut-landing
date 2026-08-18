@@ -1,6 +1,6 @@
 # DATTANUT — landing multipágina
 
-Sitio estático accesible para **DATTANUT — Inteligencia que da frutos**, publicado como demostración en GitHub Pages: <https://yeezyboyskn.github.io/dattanut-landing/>.
+Sitio estático accesible para **DATTANUT — Inteligencia que da frutos**, publicado en <https://dattanut.com/> (GitHub Pages con dominio personalizado).
 
 ## Arquitectura
 

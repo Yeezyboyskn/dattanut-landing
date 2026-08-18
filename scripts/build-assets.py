@@ -89,7 +89,7 @@ def social_card(mark: Image.Image) -> None:
     draw.text((72, 267), "Frutos secos de Chile", font=font("space-grotesk.woff2", 48), fill=CREAM)
     draw.text((72, 330), "Datos trazables · Criterio sectorial", font=font("inter.woff2", 25), fill=CREAM)
     draw.line((72, 397, 590, 397), fill=GOLD, width=3)
-    draw.text((72, 438), "yeezyboyskn.github.io/dattanut-landing/", font=font("inter.woff2", 20), fill=GOLD_LIGHT)
+    draw.text((72, 438), "dattanut.com/", font=font("inter.woff2", 20), fill=GOLD_LIGHT)
     final = Image.alpha_composite(hero, overlay).convert("RGB")
 
     for colors in (64, 48, 40, 32, 24, 16):
