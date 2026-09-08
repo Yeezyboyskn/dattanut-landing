@@ -29,7 +29,7 @@
     "horario": "Lunes a viernes · horario de oficina · Chile",
     "respuesta": "Respondemos normalmente dentro de 48 horas hábiles."
   },
-  "demoBar": "Demostración editorial · Los datos reales siguen sujetos a validación del cliente.",
+  "demoBar": "Demostración editorial · Los datos reales siguen sujetos a validación.",
   "ui": {
     "saltarAlContenido": "Saltar al contenido",
     "abrirMenu": "Abrir menú",
@@ -56,5 +56,5 @@
     }
   },
   "marca": "DATTANUT",
-  "ogImagenAlt": "DATTANUT, inteligencia y trazabilidad para frutos secos de Chile"
+  "ogImagenAlt": "DATTANUT, inteligencia y trazabilidad para frutos secos "
 }
