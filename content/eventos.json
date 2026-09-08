@@ -5,7 +5,7 @@
   },
   "pagina": {
     "hero": {
-      "imagen": "/assets/img/hero-orchard.webp",
+      "imagen": "/assets/img/walnuts.webp",
       "eyebrow": "Agenda sectorial",
       "titulo": "Eventos con verificación previa",
       "resaltado": "verificación previa",
@@ -23,8 +23,16 @@
     "criterios": {
       "status": "Recepción abierta",
       "titulo": "Criterios para publicar",
-      "items": ["Organización identificable", "Fecha y lugar confirmados", "Enlace oficial vigente", "Relevancia para frutos secos"],
-      "boton": { "label": "Proponer actividad", "url": "contacto.html?motivo=Proponer%20contenido" }
+      "items": [
+        "Organización identificable",
+        "Fecha y lugar confirmados",
+        "Enlace oficial vigente",
+        "Relevancia para frutos secos"
+      ],
+      "boton": {
+        "label": "Proponer actividad",
+        "url": "contacto.html?motivo=Proponer%20contenido"
+      }
     }
   },
   "estados": {
