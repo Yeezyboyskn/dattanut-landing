@@ -4,7 +4,7 @@
     "descripcion": "Contenidos por especie con un estado editorial visible."
   },
   "hero": {
-    "imagen": "/assets/img/hero-orchard.webp",
+    "imagen": "/assets/img/datanuts-pistachos.jpg",
     "eyebrow": "Biblioteca técnica",
     "titulo": "Conocimiento con un estado visible",
     "resaltado": "visible",
@@ -17,7 +17,11 @@
     "todas": "Todas",
     "estado": "Estado",
     "todos": "Todos",
-    "estados": ["Validado", "En revisión", "Por validar"]
+    "estados": [
+      "Validado",
+      "En revisión",
+      "Por validar"
+    ]
   },
   "transversal": "Transversal",
   "vacio": {
@@ -27,6 +31,9 @@
   "cta": {
     "titulo": "¿Tiene conocimiento que aportar?",
     "copy": "Proponer no garantiza publicación: todo contenido pasa por revisión editorial.",
-    "boton": { "label": "Proponer contenido", "url": "contacto.html?motivo=Proponer%20contenido" }
+    "boton": {
+      "label": "Proponer contenido",
+      "url": "contacto.html?motivo=Proponer%20contenido"
+    }
   }
 }
