@@ -4,7 +4,7 @@
     "descripcion": "Converse con el equipo DATTANUT o proponga una colaboración sectorial."
   },
   "hero": {
-    "imagen": "/assets/img/hero-orchard.webp",
+    "imagen": "/assets/img/_dsc8721.jpg",
     "eyebrow": "Contacto",
     "titulo": "Conversemos sobre información que sirve",
     "resaltado": "información que sirve",
@@ -16,16 +16,21 @@
     "resaltado": "contextualizada"
   },
   "form": {
-    "nombre": "Nombre",
-    "email": "Email",
     "organizacion": "Organización",
-    "opcional": "(opcional)",
-    "motivo": "Motivo",
+    "asunto": "Nuevo mensaje desde dattanut.com",
     "seleccione": "Seleccione",
-    "opciones": ["Solicitar información", "Participar como exportador", "Proponer contenido", "Otro"],
-    "mensaje": "Mensaje",
+    "nombre": "Nombre",
     "enviar": "Enviar mensaje",
     "nota": "Datos usados solo para responder su consulta. Sin consentimiento, no se activa analítica.",
-    "asunto": "Nuevo mensaje desde dattanut.com"
+    "motivo": "Motivo",
+    "opcional": "(opcional)",
+    "opciones": [
+      "Solicitar información",
+      "Participar como exportador",
+      "Proponer contenido",
+      "Otro"
+    ],
+    "email": "Email",
+    "mensaje": "Mensaje"
   }
 }
