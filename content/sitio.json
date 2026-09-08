@@ -1,9 +1,4 @@
 {
-  "marca": "DATTANUT",
-  "tagline": "Inteligencia que da frutos",
-  "demoBar": "Demostración editorial · Los datos reales siguen sujetos a validación del cliente.",
-  "metaDescripcion": "Datos y conocimiento para la industria chilena de frutos secos.",
-  "ogImagenAlt": "DATTANUT, inteligencia y trazabilidad para frutos secos de Chile",
   "nav": {
     "inicio": "Inicio",
     "productos": "Productos",
@@ -12,12 +7,38 @@
     "eventos": "Eventos",
     "contacto": "Contacto"
   },
-  "fuentes": ["ODEPA", "Aduanas", "INC", "USDA"],
+  "cookie": {
+    "titulo": "Analítica bajo su control.",
+    "texto": "GA4 solo se activa después de su autorización.",
+    "aceptar": "Aceptar",
+    "rechazar": "Rechazar"
+  },
+  "metaDescripcion": "Datos y conocimiento para la industria chilena de frutos secos.",
+  "fuentes": [
+    "ODEPA",
+    "Aduanas",
+    "INC",
+    "USDA",
+    "SAG",
+    "Elaboracion interna "
+  ],
+  "tagline": "Inteligencia que da frutos",
   "contacto": {
-    "nombre": "Richard López",
+    "nombre": "Contacto dattanut",
     "email": "contacto@dattanut.com",
     "horario": "Lunes a viernes · horario de oficina · Chile",
-    "respuesta": "Richard López es el contacto del proyecto. Respondemos normalmente dentro de 48 horas hábiles."
+    "respuesta": "Respondemos normalmente dentro de 48 horas hábiles."
+  },
+  "demoBar": "Demostración editorial · Los datos reales siguen sujetos a validación del cliente.",
+  "ui": {
+    "saltarAlContenido": "Saltar al contenido",
+    "abrirMenu": "Abrir menú",
+    "cerrarAviso": "Cerrar aviso",
+    "irAlInicio": "ir al inicio",
+    "breadcrumbInicio": "Inicio",
+    "migasDePan": "Migas de pan",
+    "conversemos": "Conversemos",
+    "contactarEquipo": "Contactar al equipo"
   },
   "footer": {
     "descripcion": "Una plataforma chilena para ordenar y contextualizar información técnica y comercial sobre frutos secos.",
@@ -34,20 +55,6 @@
       "privacidad": "Privacidad"
     }
   },
-  "cookie": {
-    "titulo": "Analítica bajo su control.",
-    "texto": "GA4 solo se activa después de su autorización.",
-    "aceptar": "Aceptar",
-    "rechazar": "Rechazar"
-  },
-  "ui": {
-    "saltarAlContenido": "Saltar al contenido",
-    "abrirMenu": "Abrir menú",
-    "cerrarAviso": "Cerrar aviso",
-    "irAlInicio": "ir al inicio",
-    "breadcrumbInicio": "Inicio",
-    "migasDePan": "Migas de pan",
-    "conversemos": "Conversemos",
-    "contactarEquipo": "Contactar al equipo"
-  }
+  "marca": "DATTANUT",
+  "ogImagenAlt": "DATTANUT, inteligencia y trazabilidad para frutos secos de Chile"
 }
