@@ -18,7 +18,13 @@
       "todas": "Todas"
     },
     "tabla": {
-      "headers": ["Especie", "Referencia", "Periodo", "Fuente", "Corte"],
+      "headers": [
+        "Especie",
+        "Referencia",
+        "Periodo",
+        "Fuente",
+        "Corte"
+      ],
       "unidad": "Unidad: por definir",
       "dataset": "Dataset: pendiente del cliente",
       "pendiente": "Dato sujeto a validación",
@@ -40,13 +46,6 @@
     },
     {
       "species": "nueces",
-      "reference": "Dato sujeto a validación",
-      "period": "Por confirmar",
-      "source": "Por confirmar",
-      "cut": "Por confirmar"
-    },
-    {
-      "species": "almendras",
       "reference": "Dato sujeto a validación",
       "period": "Por confirmar",
       "source": "Por confirmar",
