@@ -4,7 +4,7 @@
     "descripcion": "Explore pecanos, nueces, almendras, avellanas con una estructura común."
   },
   "hero": {
-    "imagen": "/assets/img/hero-orchard.webp",
+    "imagen": "/assets/img/hazelnuts.webp",
     "eyebrow": "Productos",
     "titulo": "Datos por especie, sin perder contexto",
     "resaltado": "sin perder contexto",
@@ -16,15 +16,30 @@
     "titulo": "Tres capas para interpretar mejor.",
     "resaltado": "interpretar mejor",
     "cards": [
-      { "label": "01 · Contexto", "titulo": "Panorama técnico-comercial", "texto": "Variables principales y posición de la cadena." },
-      { "label": "02 · Evidencia", "titulo": "Fuente, periodo y corte", "texto": "Trazabilidad visible junto a cada referencia." },
-      { "label": "03 · Profundización", "titulo": "Biblioteca relacionada", "texto": "Contenidos vinculados por especie y estado editorial." }
+      {
+        "label": "01 · Contexto",
+        "titulo": "Panorama técnico-comercial",
+        "texto": "Variables principales y posición de la cadena."
+      },
+      {
+        "label": "02 · Evidencia",
+        "titulo": "Fuente, periodo y corte",
+        "texto": "Trazabilidad visible junto a cada referencia."
+      },
+      {
+        "label": "03 · Profundización",
+        "titulo": "Biblioteca relacionada",
+        "texto": "Contenidos vinculados por especie y estado editorial."
+      }
     ]
   },
   "cta": {
     "titulo": "¿Quiere aportar información sectorial?",
     "copy": "La participación se gestiona con anonimización, confidencialidad y revisión editorial.",
-    "boton": { "label": "Participar como exportador", "url": "contacto.html?motivo=Participar%20como%20exportador" }
+    "boton": {
+      "label": "Participar como exportador",
+      "url": "contacto.html?motivo=Participar%20como%20exportador"
+    }
   },
   "especie": {
     "fichaEyebrow": "Ficha de especie · {latin}",
@@ -36,7 +51,12 @@
     },
     "criterios": {
       "label": "Criterios mínimos",
-      "items": ["Fuente identificada", "Periodo explícito", "Unidad comparable", "Fecha de corte visible"]
+      "items": [
+        "Fuente identificada",
+        "Periodo explícito",
+        "Unidad comparable",
+        "Fecha de corte visible"
+      ]
     },
     "referencias": {
       "eyebrow": "Referencias de mercado",
@@ -45,13 +65,22 @@
       "texto": "No publicamos valores ficticios. Esta tabla documenta el esquema que recibirá los datos reales."
     },
     "acciones": {
-      "biblioteca": { "label": "Ver biblioteca", "url": "biblioteca.html?especie={especie}" },
-      "solicitar": { "label": "Solicitar información", "url": "contacto.html" }
+      "biblioteca": {
+        "label": "Ver biblioteca",
+        "url": "biblioteca.html?especie={especie}"
+      },
+      "solicitar": {
+        "label": "Solicitar información",
+        "url": "contacto.html"
+      }
     },
     "cta": {
       "titulo": "Fortalezcamos la referencia de {nombre}.",
       "copy": "La publicación agregada requiere anonimización, confidencialidad y revisión previa.",
-      "boton": { "label": "Participar como exportador", "url": "contacto.html?motivo=Participar%20como%20exportador" }
+      "boton": {
+        "label": "Participar como exportador",
+        "url": "contacto.html?motivo=Participar%20como%20exportador"
+      }
     }
   }
 }
